@@ -1,0 +1,165 @@
+<div id="homepagedata">
+
+    <section id="homeslider">
+        <img src="img/slider_image.jpg" id="slider_image" class="img-responsive">
+        <div class="slider_description">
+            <h3 id="slider_statment">Welcome to Xcellen<br> Your new partner in commercial excellence </h3>
+            <h4 id="slider_statment_2">SFE Consulting, Data & Technology<br/> Pharma & Consumer Health</h4>
+        </div>
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="text-center">
+                        <h2 class="pagetitle" >Sales force effectiveness consulting</h2>                        
+                    </div>
+
+                    <h3>Unlock Potential &#0151 Achieve Results</h3>
+                    <!-- <h3>We help you unlock potential and achieve results</h3> -->
+                </div>
+            </div>
+            <div class="row">
+             <p id="main_statement_paragraph">SFE in Asia Pacific is not well established despite proven worldwide as an important growth driver. We are experts in the field, know the best practices and tailor methodologies to the local data realities.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    
+    <div ng-controller="personController">
+        <section class="success" id="featurebox"  >
+            <div class="container" style="position:relative;">
+                <div class="row">
+                    <div class="col-sm-4 service">
+                      <img src="img/img_1.png"class="image_row_img" />
+                      <p class="image_row_paragraph"><a ng-click="changeID('sfe_screen')">SFE SCREENING</a><br>Check your current SFE practices, compare with best practices and identify and prioritize opportunities for improvement.</p>
+                    </div>
+                    <div class="col-sm-4 service">
+                      <img src="img/img_2.png"class="image_row">
+                      <p class="image_row_paragraph">
+                        <a id="targetting" ng-click="changeID('targetting')" >TARGETING</a><br>Profile and segment physicians, pharmacies or hospitals in order to align resources to market potential.</p>
+                    </div>
+                     <div class="col-sm-4 service">
+                      <img src="img/img_3.png"class="image_row">
+                      <p class="image_row_paragraph"><a ng-click="changeID('resc-opt')" id="resc-opt">RESOURCE OPTIMIZATION</a><br>Determine the right sales force size and structure to optimally promote your new and established products.</p>
+                    </div>
+                </div>
+            </div>
+                <div id="service-bottom">
+                    <div id="triangle_img" class="container">
+                        <!-- <ul id="featurelist">
+                                <li><a ng-click="changeID('sfe_screen')" ><img src="img/image_1.png" /></a></li>
+                                <li><a ng-click="changeID('targetting')" ><img src="img/image_2.png" /></a></li>
+                                <li><a ng-click="changeID('resc-opt')" ><img src="img/image_3.png" /></a></li>
+                                <li><a ng-click="changeID('territory')" ><img src="img/image_4.png" /></a></li>
+                                <li><a ng-click="changeID('sfe-comp')" ><img src="img/image_5.png" /></a></li>
+                                <li><a ng-click="changeID('adhoc')" ><img src="img/image_6.png" /></a></li>
+                            </ul> -->
+<!--                         <div class="col-sm-6" id="trianglefeature">
+                            <table>
+                                <tr>
+                                    <td colspan="3" align="center" >
+                                        <span style="" ng-click="toggletxt('issuetxt')" >
+                                            <img src="img/img_33.png">
+                                            <br><span>ISSUE</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="bottom">
+                                        <span ng-click="toggletxt('devliverytxt')" >
+                                            <img src="img/img_11.png">
+                                            <br><span>DELIVERABLES</span>
+                                        </span>
+                                    </td>
+                                    <td  align="center"> 
+                                        <img src="img/triancle_new.png" alt="" style="width:100%;" />            
+                                    </td>
+                                    <td width="106" valign="bottom">
+                                        <span style="" ng-click="toggletxt('approachtxt')" >
+                                            <img src="img/img_22.png">
+                                            <br><span >APPROACH</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> -->
+
+                        <div class="col-sm-6" id="trianglefeature" style="position:relative; padding-top: 85px; padding-left: 90px;">
+                            <img src="img/triangle.png" alt="triangle" style="height:270px;"/>
+                            
+                                        <span style="position:absolute; top: 10px; left: 270px;" ng-click="toggletxt('issuetxt')">
+                                            <img src="img/img_33.png">
+                                            <br><span>ISSUE</span>
+                                        </span>
+
+                                        <span style="position:absolute; top: 289px; left: 10px;" ng-click="toggletxt('devliverytxt')" >
+                                            <img src="img/img_11.png">
+                                            <br><span>DELIVERABLES</span>
+                                        </span>
+                                   
+                                        <span style="position:absolute; top: 269px; left: 430px;" ng-click="toggletxt('approachtxt')" >
+                                            <img src="img/img_22.png">
+                                            <br><span >APPROACH</span>
+                                        </span>
+                        </div>
+
+                        <div class="col-sm-6" style="max-width: 400px; font-size: 20px;">
+                          <h3>{{divtitle}}</h3>
+                          <p ng-click="myVar" id="our_approch_paragraph" ng-bind-html="divtext" ></p>
+                           <input type='hidden' ng-model="divtext">
+                        </div>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="row image_row_margin" >
+                    <div class="col-sm-4 service" style="margin-left: -15px;">
+                      <img src="img/img_4.png"class="image_row">
+                      <p class="image_row_paragraph"><a ng-click="changeID('territory')" id="territory" >TERRITORY DESIGN</a><br>Design fair, workable and balanced territories to unlock potential by providing similar opportunities across the sales force.</p>
+                    </div>
+                    <div class="col-sm-4 service">
+                      <img src="img/img_5.png"class="image_row">
+                      <p class="image_row_paragraph"><a ng-click="changeID('sfe-comp')" id="sfe-comp" >SALES FORCE COMPENSATION</a><br>Design the best compensation scheme to motivate and drive the sales force. Set unbiased and fair targets based on robust methodology.</p>
+                    </div>
+<!--                      <div class="col-sm-4 service">
+                      <img src="img/img_6.png"class="image_row">
+                      <p class="image_row_paragraph"><a ng-click="changeID('adhoc')" id="adhoc" >AD HOC SFE</a><br>We are able to accommodate any request your company might have on the sales force and marketing effectiveness. Give us a call.</p>
+                     
+                    </div> -->
+                </div>
+            </div>
+
+        </section>
+
+    <!-- Contact Section -->
+         
+    </div>
+
+    <!-- images -->
+    <section id="featureOne">
+        <div class="text-center">
+            <h2 class="pagetitle" >Data</h2>                        
+        </div>
+            <img src="img/data.jpg" />
+        <div class="description">
+            <h3>We are working hard <br/> to bring new data sets to South East Asia</h3>
+            <h3>Bear with us and watch this space</h3>
+        </div>
+    </section>
+    <section id="featureTwo">
+        <div class="text-center">
+            <h2 class="pagetitle" >Technology</h2>                        
+        </div>
+        <img src="img/technology.jpg" />
+        <div class="description">
+            <h3>We are working hard <br/> to boot SFE through technology</h3>
+            <h3>Bear with us and watch this space</h3>
+        </div>
+    </section>
+
+    
+
+</div>
