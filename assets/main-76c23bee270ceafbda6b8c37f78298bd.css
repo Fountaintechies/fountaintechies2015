@@ -8304,8 +8304,7 @@ body.maps .arrow-left:after, section.maps .arrow-left:after, div.maps .arrow-lef
   display: block
 }
 .navbar.navbar-orange {
-  border-bottom: 0;
-  background-color: #f05528;
+  border-bottom:
   min-height: 45px;
   border: none;
   margin: 0
@@ -9480,7 +9479,6 @@ a.author-twitter {
     position: absolute;
     height: auto;
     padding: 0;
-    background-color: #f05528
   }
   .navbar-orange .navbar-brand:hover, .navbar-orange .navbar-brand:focus {
     background-color: #f05528;
