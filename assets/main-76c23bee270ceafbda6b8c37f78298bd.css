@@ -5582,6 +5582,8 @@ button.close {
 @media (min-width: 600px) and (max-width: 767px) {
   .visible-smaller-block {
     display: block !important
+    text-align:center;
+
   }
 }
 @media (min-width: 600px) and (max-width: 767px) {
