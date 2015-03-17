@@ -8321,9 +8321,9 @@ body.maps .arrow-left:after, section.maps .arrow-left:after, div.maps .arrow-lef
   background-color: #fff
 }
 .navbar.navbar-orange .navbar-nav>li>a {
-  background-color: #f05528;
+  background-color: #1a97a6;
   font-size: 14px;
-  font-family: ClanWeb-Medium, "Open Sans", sans-serif
+  font-family: ClanWeb-Medium, "Open Sans", sans-serif;
 }
 .navbar.navbar-orange .navbar-nav>li>a, .navbar.navbar-orange .navbar-nav>li>a:hover, .navbar.navbar-orange .navbar-nav>li>a:focus, .navbar.navbar-orange .navbar-nav>li>a:active, .navbar.navbar-orange .navbar-nav>li>a.active {
   color: #fff;
@@ -9479,9 +9479,10 @@ a.author-twitter {
     position: absolute;
     height: auto;
     padding: 0;
+    background-color: #1a97a6;
   }
   .navbar-orange .navbar-brand:hover, .navbar-orange .navbar-brand:focus {
-    background-color: #f05528;
+    background-color: #ffffff;
     text-decoration: none
   }
   .navbar-orange .navbar-brand.is-label {
