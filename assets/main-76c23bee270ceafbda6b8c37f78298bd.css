@@ -5135,6 +5135,11 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none
 }
+.client_img{
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.14);
+	border: 5px solid #FFFFFF;
+}
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
     width: 30px;
