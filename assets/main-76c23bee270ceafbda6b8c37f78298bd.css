@@ -8608,7 +8608,7 @@ a:hover {
   background-image: url("../images/typewriter-wallpaper-480.jpg")
 }
 .page-header.about-header {
-  background-image: url("../images/about-header-480.jpg")
+  background-image: url("../images/about-768.jpg")
 }
 .page-header.client-header {
   background-image: url("../images/clients-768.jpg")
@@ -9531,7 +9531,7 @@ a.author-twitter {
     background-image: url("../images/header-vague-768.jpg")
   }
   .page-header.about-header {
-    background-image: url("../images/about-header-768.jpg")
+    background-image: url("../images/about-768.jpg")
   }
   .page-header.clients-header {
     background-image: url("../images/clients-768.jpg")
@@ -9644,7 +9644,7 @@ a.author-twitter {
     background-image: url("../images/header-vague-1024.jpg")
   }
   .page-header.about-header {
-    background-image: url("../images/about-header-1024.jpg")
+    background-image: url("../images/about-1200.jpg")
   }
   .page-header.clients-header {
     background-image: url("../images/clients-1200.jpg")
@@ -9723,7 +9723,7 @@ a.author-twitter {
     background-image: url("../images/header-vague-1200.jpg")
   }
   .page-header.about-header {
-    background-image: url("../images/about-header-1200.jpg")
+    background-image: url("../images/about-1920.jpg")
   }
   .page-header.clients-header {
     background-image: url("../images/clients-1920.jpg")
