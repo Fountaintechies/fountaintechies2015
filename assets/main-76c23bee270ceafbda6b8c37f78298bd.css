@@ -8605,7 +8605,7 @@ a:hover {
   font-style: italic
 }
 .page-header.blog-header {
-  background-image: url("../images/typewriter-wallpaper-480.jpg")
+  background-image: url("../images/blog-768.jpg")
 }
 .page-header.about-header {
   background-image: url("../images/about-768.jpg")
@@ -9537,7 +9537,7 @@ a.author-twitter {
     background-image: url("../images/clients-768.jpg")
   }
   .page-header.blog-header {
-    background-image: url("../images/typewriter-wallpaper-768.jpg")
+    background-image: url("../images/blog-768.jpg")
   }
   .page-header.cases-header {
     background-image: url("../images/typewriter-wallpaper-768.jpg")
@@ -9650,7 +9650,7 @@ a.author-twitter {
     background-image: url("../images/clients-1200.jpg")
   }
   .page-header.blog-header {
-    background-image: url("../images/typewriter-wallpaper-1024.jpg")
+    background-image: url("../images/blog-1200.jpg")
   }
   .page-header.jobs-header {
     background-image: url("../images/jobs-1200.jpg")
@@ -9729,7 +9729,7 @@ a.author-twitter {
     background-image: url("../images/clients-1920.jpg")
   }
   .page-header.blog-header {
-    background-image: url("../images/typewriter-wallpaper-1200.jpg")
+    background-image: url("../images/blog-1920.jpg")
   }
   .page-header.jobs-header {
     background-image: url("../images/jobs-1920.jpg")
