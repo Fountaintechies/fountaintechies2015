@@ -8979,30 +8979,30 @@ a.author-twitter {
 }
 .client-block .client-block-inner {
   background-image: url("../images/clients/client-sprite-small.png");
-  background-size: 768px 394px;
-  width: 257px;
-  height: 100px;
+  background-size: 720px 480px;
+  width: 240px;
+  height: 240px;
   margin: 0 auto
 }
 .client-block.client-philips .client-block-inner {
   background-position: 0px 0px
 }
 .client-block.client-vrt .client-block-inner {
-  background-position: -257px 0px
+  background-position: -240px 0px
 }
 .client-block.client-alcatel-lucent .client-block-inner {
-  background-position: -514px 0px
+  background-position: -480px 0px
 }
 .client-block.client-smappee .client-block-inner {
-  background-position: 0px -100px
+  background-position: 0px -240px
 }
 .client-block.client-vente-exclusive .client-block-inner {
-  background-position: -257px -100px
+  background-position: -240px -240px
 }
 .client-block.client-sanoma .client-block-inner {
-  background-position: -514px -100px
+  background-position: -480px -240px
 }
-.client-block.client-ing .client-block-inner {
+/*.client-block.client-ing .client-block-inner {
   background-position: 0px -200px
 }
 .client-block.client-ici-paris-xl .client-block-inner {
@@ -9019,7 +9019,7 @@ a.author-twitter {
 }
 .client-block.client-fit .client-block-inner {
   background-position: -514px -300px
-}
+}*/
 .client-block:hover .client-block-inner {
   background-image: url("../images/clients/client-sprite-color-small.png")
 }
