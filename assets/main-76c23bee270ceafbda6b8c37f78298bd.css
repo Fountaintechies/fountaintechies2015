@@ -9509,7 +9509,7 @@ a.author-twitter {
   .navbar-orange .navbar-brand .navbar-brand-icon {
     width: 125px;
     height: 125px;
-    background: rgb(26,151,166) url("../images/logo_fountaintechies-short.svg") no-repeat center center
+    background: rgb(255,255,255) url("../images/logo_fountaintechies-short.svg") no-repeat center center
   }
   .navbar-orange .navbar-brand .navbar-brand-icon:before {
     line-height: 125px
