@@ -850,11 +850,11 @@ input, button, select, textarea {
   line-height: inherit
 }
 a {
-  color: #337ab7;
+  color: rgb(22,38,78);
   text-decoration: none
 }
 a:hover, a:focus {
-  color: #23527c;
+  color: rgb(92,43,127);
   text-decoration: underline
 }
 a:focus {
@@ -3512,7 +3512,7 @@ tbody.collapse.in {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: rgb(26,151,166);
   border-color: #e7e7e7
 }
 .navbar-default .navbar-brand {
@@ -8322,13 +8322,13 @@ body.maps .arrow-left:after, section.maps .arrow-left:after, div.maps .arrow-lef
   outline: none
 }
 .navbar.navbar-orange .navbar-toggle, .navbar.navbar-orange .navbar-toggle:visited, .navbar.navbar-orange .navbar-toggle:active, .navbar.navbar-orange .navbar-toggle:hover {
-  background-color: #f05528
+  background-color: rgb(26,151,166);
 }
 .navbar.navbar-orange .navbar-toggle .icon-bar {
   background-color: #fff
 }
 .navbar.navbar-orange .navbar-nav>li>a {
-  background-color: #1a97a6;
+  background-color: rgb(26,151,166);
   font-size: 14px;
   font-family: ClanWeb-Medium, "Open Sans", sans-serif;
 }
@@ -8343,7 +8343,7 @@ body.maps .arrow-left:after, section.maps .arrow-left:after, div.maps .arrow-lef
   display: block;
   width: 45px;
   height: 45px;
-  background: #f05528 url("../images/af-logo.svg") no-repeat center center
+  background: rgb(26,151,166) url("../images/logo_fountaintechies-short-white.svg") no-repeat center center
 }
 .navbar-brand .navbar-brand-text {
   display: none
@@ -9489,10 +9489,10 @@ a.author-twitter {
     position: absolute;
     height: auto;
     padding: 0;
-    background-color: #1a97a6;
+    background-color: rgb(26,151,166);
   }
   .navbar-orange .navbar-brand:hover, .navbar-orange .navbar-brand:focus {
-    background-color: #ffffff;
+    background-color: rgb(26,151,166);
     text-decoration: none
   }
   .navbar-orange .navbar-brand.is-label {
@@ -9509,7 +9509,7 @@ a.author-twitter {
   .navbar-orange .navbar-brand .navbar-brand-icon {
     width: 125px;
     height: 125px;
-    background: #f05528 url("../images/af-logo.svg") no-repeat center center
+    background: rgb(26,151,166) url("../images/logo_fountaintechies-short.svg") no-repeat center center
   }
   .navbar-orange .navbar-brand .navbar-brand-icon:before {
     line-height: 125px
