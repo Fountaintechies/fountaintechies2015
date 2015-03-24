@@ -854,7 +854,7 @@ a {
   text-decoration: none
 }
 a:hover, a:focus {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
   text-decoration: underline
 }
 a:focus {
@@ -7396,7 +7396,7 @@ section.map-holder {
   padding-bottom: 0
 }
 a {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
 }
 a:hover, a:active {
   color: #d63c0f;
@@ -7452,10 +7452,10 @@ a.btn.btn-yellow {
   border-color: rgb(26,151,166);
 }
 a.btn.btn-yellow:hover {
-  border-color: rgb(92,43,127);
+  border-color: rgb(25,100,127);
 }
 a.btn.btn-yellow:active, a.btn.btn-yellow:focus {
-  border-color: rgb(92,43,127);
+  border-color: rgb(25,100,127);
 }
 a.btn.btn-red {
   background-color: #ff4444;
@@ -7984,11 +7984,11 @@ body.light a.section-button, section.light a.section-button, div.light a.section
   bottom: 0;
   z-index: 1;
   padding: 10px;
-  background-color: rgb(92,43,127);
+  background-color: rgb(25,100,127);
   color: rgb(255,255,255);
 }
 body.light.border-bottom, body.light.border-top, body.light.border-top-bottom, section.light.border-bottom, section.light.border-top, section.light.border-top-bottom, div.light.border-bottom, div.light.border-top, div.light.border-top-bottom, aside.light.border-bottom, aside.light.border-top, aside.light.border-top-bottom, header.light.border-bottom, header.light.border-top, header.light.border-top-bottom {
-  border-color: rgb(92,43,127);
+  border-color: rgb(25,100,127);
   border-style: solid
 }
 body.light.border-bottom, section.light.border-bottom, div.light.border-bottom, aside.light.border-bottom, header.light.border-bottom {
@@ -8048,7 +8048,7 @@ body.light .img-circle, section.light .img-circle, div.light .img-circle, aside.
   border: 4px solid rgba(200, 200, 200, 0.2)
 }
 body.light a, section.light a, div.light a, aside.light a, header.light a {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
 }
 body.light a:hover, body.light a:active, section.light a:hover, section.light a:active, div.light a:hover, div.light a:active, aside.light a:hover, aside.light a:active, header.light a:hover, header.light a:active {
   color: rgb(74,197,222);
@@ -8135,7 +8135,7 @@ body.turquoise .arrow-left:after, section.turquoise .arrow-left:after, div.turqu
   border-right: 10px solid #1abc9c
 }
 body.dark, section.dark, div.dark, aside.dark, header.dark {
-  background-color: rgb(145, 160, 175);
+  background-color: rgb(217,226,232);
   color: white
 }
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, section.dark h1, section.dark h2, section.dark h3, section.dark h4, section.dark h5, section.dark h6, div.dark h1, div.dark h2, div.dark h3, div.dark h4, div.dark h5, div.dark h6, aside.dark h1, aside.dark h2, aside.dark h3, aside.dark h4, aside.dark h5, aside.dark h6, header.dark h1, header.dark h2, header.dark h3, header.dark h4, header.dark h5, header.dark h6 {
@@ -8215,10 +8215,10 @@ body.dark .arrow-left:after, section.dark .arrow-left:after, div.dark .arrow-lef
   border-right: 10px solid #2c3e50
 }
 body.dark.footer a, section.dark.footer a, div.dark.footer a, aside.dark.footer a, header.dark.footer a {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
 }
 body.dark.footer a:hover, body.dark.footer a:active, section.dark.footer a:hover, section.dark.footer a:active, div.dark.footer a:hover, div.dark.footer a:active, aside.dark.footer a:hover, aside.dark.footer a:active, header.dark.footer a:hover, header.dark.footer a:active {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
   text-decoration: none
 }
 body.maps, section.maps, div.maps, aside.maps, header.maps {
@@ -8322,13 +8322,13 @@ body.maps .arrow-left:after, section.maps .arrow-left:after, div.maps .arrow-lef
   outline: none
 }
 .navbar.navbar-orange .navbar-toggle, .navbar.navbar-orange .navbar-toggle:visited, .navbar.navbar-orange .navbar-toggle:active, .navbar.navbar-orange .navbar-toggle:hover {
-  background-color: rgb(92,43,127);
+  background-color: rgb(25,100,127);
 }
 .navbar.navbar-orange .navbar-toggle .icon-bar {
   background-color: #fff
 }
 .navbar.navbar-orange .navbar-nav>li>a {
-  background-color: rgb(92,43,127);
+  background-color: rgb(25,100,127);
   font-size: 14px;
   font-family: ClanWeb-Medium, "Open Sans", sans-serif;
 }
@@ -8343,7 +8343,7 @@ body.maps .arrow-left:after, section.maps .arrow-left:after, div.maps .arrow-lef
   display: block;
   width: 45px;
   height: 45px;
-  background: rgb(92,43,127) url("../images/logo_fountaintechies-short-white.svg") no-repeat center center
+  background: rgb(25,100,127) url("../images/logo_fountaintechies-short-white.svg") no-repeat center center
 }
 .navbar-brand .navbar-brand-text {
   display: none
@@ -8431,7 +8431,7 @@ figure .line-drawing rect, figure .line-drawing path {
   margin: 0 0 0 0
 }
 .contact-icon {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
   font-size: 1.7em;
   margin-bottom: 6px
 }
@@ -8554,7 +8554,7 @@ section.continue-reading a.section-button, section.maps a.section-button, div.ma
   padding: 25px 0
 }
 a.post-link {
-  color: rgb(92,43,127);
+  color: rgb(25,100,127);
 }
 a:hover aside {
   color: gray
@@ -9489,10 +9489,10 @@ a.author-twitter {
     position: absolute;
     height: auto;
     padding: 0;
-    background-color: rgb(92,43,127);
+    background-color: rgb(25,100,127);
   }
   .navbar-orange .navbar-brand:hover, .navbar-orange .navbar-brand:focus {
-    background-color: rgb(92,43,127);
+    background-color: rgb(25,100,127);
     text-decoration: none
   }
   .navbar-orange .navbar-brand.is-label {
