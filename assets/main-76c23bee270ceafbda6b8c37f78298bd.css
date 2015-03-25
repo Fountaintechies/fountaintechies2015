@@ -7231,7 +7231,6 @@ html, body {
   word-wrap: break-word
 }
 ul, ol {
-  list-style: disc;
   margin-top: 18px;
   margin-bottom: 18px;
   padding: 0 0 10 20px
@@ -9782,4 +9781,74 @@ a.author-twitter {
   .client-block:hover .client-block-inner {
     background-image: url("../images/clients/client-sprite-color.png")
   }
+}
+.custom-counter {
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+  margin:0;
+  color: #000;
+  overflow-y: scroll;
+}
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+li{
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  color: #000;
+  font-weight: bold;
+  padding: 3px 8px;
+}
+.head_p{  
+  background: rgb(25, 100, 127);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.linemenus li{  counter-increment: step-counter;}
+.prettyprint linenums pre-scrollable{background-color: #F5F5F5;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 3px;
+  color: #000;}
+.pln {
+  color: #48484c;
+}
+.tag {
+  color: #1e347b;
+}
+.atn {
+  color: teal;
+}
+.pun, .opn, .clo {
+  color: #93a1a1;
+}
+.atv {
+  color: #D14;
+}
+.my_pre{background:whitesmoke;color:#000;font-size:14px;margin-top: 20px;}
+.str, .atv {
+  color: #D14;
+}
+.linenums{background:whitesmoke;color:#000;font-size:14px;margin-top: 20px;}
+
+.alert-trophy {
+  padding-left: 60px;
+}
+.alert-trophy::before {
+  font-family: FontAwesome;
+  content: "\f091";
+  margin-left: -45px;
+  font-size: 32px;
+  position: absolute;
+  padding-top: 20px;
 }
