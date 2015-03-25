@@ -8062,7 +8062,7 @@ body.turquoise h1, body.turquoise h2, body.turquoise h3, body.turquoise h4, body
   color: white
 }
 body.turquoise a, section.turquoise a, div.turquoise a, aside.turquoise a, header.turquoise a {
-  color: #16a085
+  color: rgb(25,100,127);
 }
 body.turquoise a:hover, section.turquoise a:hover, div.turquoise a:hover, aside.turquoise a:hover, header.turquoise a:hover {
   color: white
