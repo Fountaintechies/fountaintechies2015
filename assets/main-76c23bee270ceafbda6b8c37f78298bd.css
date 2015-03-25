@@ -9289,15 +9289,15 @@ a.author-twitter {
   header .jobs-teaser {
     cursor: pointer;
     position: absolute;
-    right: 25px;
+    right: 15px;
     bottom: 0;
-    width: 181px;
-    height: 135px;
-    background: transparent url("../images/robo-job-link.png") no-repeat center center;
-    background-size: 181px 135px
+    width: 200px;
+    height: 89px;
+    background: transparent url("../images/hiring.png") no-repeat center center;
+    background-size: 200px 89px
   }
   header .jobs-teaser:hover {
-    background-image: url("../images/robo-job-link-hover.png")
+    background-image: url("../images/hiring-hover.png")
   }
 }
 @media (min-width: 768px) {
