@@ -9292,9 +9292,9 @@ a.author-twitter {
     right: 15px;
     bottom: 0;
     width: 200px;
-    height: 89px;
+    height: 94px;
     background: transparent url("../images/hiring.png") no-repeat center center;
-    background-size: 200px 89px
+    background-size: 200px 94px
   }
   header .jobs-teaser:hover {
     background-image: url("../images/hiring-hover.png")
