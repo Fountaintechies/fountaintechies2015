@@ -8138,7 +8138,7 @@ body.dark, section.dark, div.dark, aside.dark, header.dark {
   color: white
 }
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, section.dark h1, section.dark h2, section.dark h3, section.dark h4, section.dark h5, section.dark h6, div.dark h1, div.dark h2, div.dark h3, div.dark h4, div.dark h5, div.dark h6, aside.dark h1, aside.dark h2, aside.dark h3, aside.dark h4, aside.dark h5, aside.dark h6, header.dark h1, header.dark h2, header.dark h3, header.dark h4, header.dark h5, header.dark h6 {
-  color: white
+  color: rgb(22,38,78);
 }
 body.dark a, section.dark a, div.dark a, aside.dark a, header.dark a {
   color: #34495e
