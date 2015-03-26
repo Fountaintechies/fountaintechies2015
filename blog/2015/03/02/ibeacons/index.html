@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>iBeacons | Blog | fountaintechies</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+                <meta name="description" content="fountaintechies gives you some insight about the latest stepping stone in hyperlocal and contextual marketing leveraging ibeacons."/>
+                <meta name="keywords" content="ibeacon,beacon,local,contextual,marketing,mobile development, fountaintechies"/>
+                <meta property="og:type" content="article"/>
+                <meta property="og:title" content="iBeacon Revolution"/>
+                <meta property="og:url" content="http://www.fountaintechies.com/blog/2015/03/02/ibeacons/"/>
+                <meta property="og:site_name" content="fountaintechies"/>
+                <meta property="og:image" content="http://www.fountaintechies.com/images/af-og-image.jpg"/>
+                <meta property="og:description" content="fountaintechies is proud to have been able to work together with Belfius on creating the Belfius Direct Wear smartwatch application."/>
+                <meta property="article:published_time" content="Mar 02, 2015 ">
+                    <meta property="article:section" content="iBeacon Mobile development">
+                        <meta property="article:tag" content="ibeacon,beacon,local,contextual,marketing">
+                            <meta property="twitter:card" content="fountaintechies"/>
+                            <meta property="twitter:site" content="@fountaintechies"/>
+                            <meta property="twitter:description" content="fountaintechies gives you some insight about the latest stepping stone in hyperlocal and contextual marketing leveraging ibeacons."/>
+                                <link rel="canonical" href="http://www.fountaintechies.com/blog/2015/03/02/ibeacons/">
+                                    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet" type="text/css">
+                                        <link rel="stylesheet" href="../../../../../assets/main-76c23bee270ceafbda6b8c37f78298bd.css" type="text/css"/>
+                                        <link rel="stylesheet" href="../../../../../assets/syntax-4e68be894597df37d65b26d04a07c779.css" type="text/css"/>
+                                        <link rel="stylesheet" href="../../../../../assets/lightbox-d09d49f017a9d99d1dc8fa3db247490c.css" type="text/css"/>
+                                        <link rel="shortcut icon" href="../../../../../favicon.ico">
+                                            <script>!function(e,a,n,o,t,c,i){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,c=a.createElement(n),i=a.getElementsByTagName(n)[0],c.async=1,c.src=o,i.parentNode.insertBefore(c,i)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-52602147-1",{cookieName:"AppFoundry_GA",cookieDomain:"appfoundry.be",cookieExpires:2419200}),ga("send","pageview")</script>
+                                            <script>!function(){if("-ms-user-select"in document.documentElement.style&&navigator.userAgent.match(/IEMobile\/10\.0/)){var e=document.createElement("style");e.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),document.getElementsByTagName("head")[0].appendChild(e)}}()</script>
+                                        </head>
+                                        <body ng-app="app" ng-class="{chrome: chrome}" class="blog-post">
+                                            <div id="wrap">
+                                                <div class="navbar navbar-orange navbar-default navbar-fixed-top" role="navigation" animated-navigation="" ng-controller="navbarController">
+                                                    <div class="container" style="position:relative">
+                                                        <div class="navbar-header">
+                                                            <button type="button" class="navbar-toggle" ng-click="collapse.open = !collapse.open">
+                                                                <span class="sr-only">Toggle navigation</span>
+                                                                <span class="icon-bar"></span>
+                                                                <span class="icon-bar"></span>
+                                                                <span class="icon-bar"></span>
+                                                            </button>
+                                                            <a class="navbar-brand is-hidden" href="../../../../../index.html" animated-navigation-logo="">
+                                                                <i class="navbar-brand-icon"></i>
+                                                                <div class="navbar-brand-text">fountaintechies</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="navbar-collapse collapse" ng-class="{in: collapse.open}">
+                                                            <ul class="nav navbar-nav navbar-right is-hidden" animated-navigation-navigation="">
+                                                                <li>
+                                                                    <a class="page-link About Us" href="../../../../../about/index.html">About Us</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="page-link Blog" href="../../../../index.html">Blog</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="page-link Clients" href="../../../../../clients/index.html">Clients</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="page-link Contact" href="../../../../../contact/index.html">Contact</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="page-link Jobs" href="../../../../../jobs/index.html">Jobs</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <article class="container blog-post">
+                                                    <div class="row">
+                                                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 no-header">
+                                                            <div>
+                                                                <header class="blog-post-header post-type-beacon" style="margin-bottom: 0;">
+                                                                    <div class="icon-wrapper vertical-centered">
+                                                                        <i class="fa fa-bullseye"></i>
+                                                                    </div>
+                                                                    <div class="vertical-centered">
+                                                                        <h1>iBeacon App Ideas</h1>
+                                                                        <p class="meta"> Mar 2, 2015 • Amol Chawathe</p>
+                                                                        <p> Categories: iBeacon, location based, contextual marketing, BLE</p>
+                                                                    </div>
+                                                                </header>
+                                                                <section class="blog-post-content" style="margin: 0 auto;">
+<!--                                                                     <div class="row">
+                                                                        <div class="col-md-4 align-center">
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                            </div>
+                                                                        </div> -->
+<!--                                                                         <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <p>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div> -->
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h2>The First Idea: Retail Offers</h2>
+                                                                                <p class="text-justify">The retail market would be the most beneficial by the iBeacon boom.
+                                                                                The technology allows retail store owners to attract customers to certain parts of the store and give them offers the moment they get close to a certain location. 
+                                                                                The strategy helps customers to feel near to the object and gives them an opportunity to buy it easily.
+                                                                                Retail stores can also give loyal customers more better gifts and suggestions.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h2>The Second Idea: iBeacon &amp; Campaigns</h2>
+                                                                                <p class="text-justify">Events can market certain locations with badges. Visitors who complete the path get more offers on their app and makes the journey more exciting.
+                                                                                The idea is to keep users engage and give them offers as they complete certain paths of the journey.
+                                                                                Through Bluetooth technology for both Android and iOS users, visitors to the an event will receive welcome messages upon arrival to the stadium, discount offers as they approach vendors, and recommendations guiding them to the closest available seats.
+                                                                                This location based content shared through iBeacons and mobile apps will dramatically enhance attendees’ meeting and event experiences; the question is how? The logistics will vary depending on how they’re used.</p>
+                                                                            
+                                                                            <ul>
+                                                                                <li>Create welcome notifications or videos as attendees enter the hotel or tradeshow floor.</li>
+                                                                                <li>Drive engagement between social circles, letting attendees know when their followers/associates/friends are nearby or attending the same sessions.</li>
+                                                                                <li>Gamification is a big one! From scavenger hunts to push notifications, interactivity will reach new levels.</li>
+                                                                                <li>Exhibitors and sponsors could pay to distribute offers or sales pushes, maybe even video demos as attendees approach their booths.</li>
+                                                                            </ul>
+                                                                                <p class="text-justify">Those are just a few options for event professionals wanting to drive more relevant content, engagement and personalized experiences.
+                                                                                We expect to see mass implementation throughout the year and various creative methodologies.
+                                                                                We are excited to hear new ideas.
+                                                                                If you have some exciting project which can use near field location services, get back to us by filling up “iBeacon Ideas” form.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <aside class="border-bottom light">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 author">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 col-sm-12">
+                                                                            <h3 class="margin-title sr-only">About the 
+                                                                                <span itemprop="role">author</span>
+                                                                            </h3>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <img src="../../../../../images/amol.jpg" alt="Amol Chawathe" class="author-avatar img-circle" itemprop="photo"/>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span class="author-name" itemprop="name">Amol Chawathe</span>
+                                                                                        <br/>
+                                                                                        <span class="author-about"> CEO &commat; fountaintechies </span>
+                                                                                        <p>
+<!--                                                                                             <a href="https://twitter.com/bartvandeweerdt" class="author-twitter" target="_blank">
+                                                                                                <i class="fa-twitter fa"></i>
+                                                                                                <span itemprop="nickname">bartvandeweerdt</span>
+                                                                                            </a> - 
+                                                                                            <a href="https://github.com/bartvandeweerdt" class="author-twitter" target="_blank">
+                                                                                                <i class="fa-github-alt fa"></i>
+                                                                                                <span itemprop="nickname">bartvandeweerdt</span>
+                                                                                            </a> -->
+                                                                                        </p>
+                                                                                        <span class="author-organisation" style="display:none" itemprop="affiliation">fountaintechies</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </aside>
+                                                    <!-- <section class="continue-reading yellow border-bottom">
+                                                        <header class="section-header">
+                                                            <h2 class="continue-reading-header">Continue reading</h2>
+                                                        </header>
+                                                        <a href="../../../../index.html" class="section-button" title="View all articles">
+                                                            <i class="fa fa-eye"></i> View all articles 
+                                                        </a>
+                                                        <div class="section-content container">
+                                                            <div class="row">
+                                                                <article class="col-xs-12 col-sm-6 continue-reading-button continue-reading-first">
+                                                                    <a class="post-link" href="../../../06/08/Swift-Optionals/index.html"></a>
+                                                                    <div class="continue-reading-button-inner row">
+                                                                        <div class="row">
+                                                                            <div class="col-xs-1 hidden-xs"></div>
+                                                                            <div class="col-xs-11">
+                                                                                <div class="continue-reading-button-header">
+                                                                                    <div class="continue-reading-button-header-icon">
+                                                                                        <div class="continue-reading-post">
+                                                                                            <div class="icon-wrapper">
+                                                                                                <i class="fa fa-apple"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="continue-reading-button-header-title">
+                                                                                        <h3>Swift Optionals</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-xs-1 hidden-xs">
+                                                                                <span class="fa fa-chevron-left"></span>
+                                                                            </div>
+                                                                            <div class="col-xs-11 continue-reading-content">
+                                                                                <small>This blog post is all about Optionals, a language concept baked into Apple's Swift programming language. We'll start off with a practical use case, in which we explain how optionals are used. We will then extend the example to make the code shorter, and hopefully, more readable too. We will finish with a study on optionals and where they come from, for those of you wanting more then just some examples. </small>
+                                                                            </div>
+                                                                            <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
+                                                                                <span class="fa fa-chevron-right"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                                <article class="col-xs-12 col-sm-6 continue-reading-button continue-reading-last">
+                                                                    <a class="post-link" href="../../../11/18/Google-Play-Services-Dynamic-Security-Provider/index.html"></a>
+                                                                    <div class="continue-reading-button-inner row">
+                                                                        <div class="row">
+                                                                            <div class="col-xs-11">
+                                                                                <div class="continue-reading-button-header">
+                                                                                    <div class="continue-reading-button-header-icon">
+                                                                                        <div class="continue-reading-post">
+                                                                                            <div class="icon-wrapper">
+                                                                                                <i class="fa fa-android"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="continue-reading-button-header-title">
+                                                                                        <h3>Google Play Services Dynamic Security Provider</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-1"></div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-xs-11 continue-reading-content">
+                                                                                <small>A quick look into the Google Play Services Dynamic Security Provider </small>
+                                                                            </div>
+                                                                            <div class="col-xs-1">
+                                                                                <span class="fa fa-chevron-right"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                            </div>
+                                                        </div>
+                                                    </section> -->
+                                                    <div id="push"></div>
+                                                </div>
+                                                <section id="contact" class="dark footer border-top contact xs-margin sm-margin md-margin" footer-element="">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="contact-col col-xs-12 col-sm-3 col-md-3 align-center">
+                                                                <div class="row">
+                                                                    <i class="contact-icon fa fa-phone"></i>
+                                                                    <h3 class="contact-title">Give us a call!</h3>
+                                                                    <h4 class="contact-label">
+                                                                        <a href="tel:006586737532">+65 8673 7532</a>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact-col col-xs-12 col-sm-3 col-md-3 align-center">
+                                                                <div class="row">
+                                                                    <i class="contact-icon fa fa-envelope"></i>
+                                                                    <h3 class="contact-title"> Send us an email!</h3>
+                                                                    <h4 class="contact-label">
+                                                                        <a href="mailto:info@fountaintechies.com">info@fountaintechies.com</a>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact-col col-xs-12 col-sm-3 col-md-3 align-center">
+                                                                <div class="row">
+                                                                    <i class="contact-icon fa fa-twitter"></i>
+                                                                    <h3 class="contact-title"> Follow us!</h3>
+                                                                    <h4 class="contact-label">
+                                                                        <a href="https://twitter.com/fountaintechies" target="_blank">@fountaintechies</a>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="contact-col col-xs-12 col-sm-3 col-md-3 align-center">
+                                                                <div class="row">
+                                                                    <i class="contact-icon fa fa-github-alt"></i>
+                                                                    <h3 class="contact-title"> Fork us on GitHub!</h3>
+                                                                    <h4 class="contact-label">
+                                                                        <a href="https://github.com/fountaintechies" target="_blank">fountaintechies</a>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <div class="align-center dark footer border-bottom">
+                                                    <p class="copyright">
+                                                        <small>&copy; 2015 Fountain Technologies Pte. Ltd.</small>
+                                                    </p>
+                                                </div>
+                                                <script src="../../../../../assets/app-fb0e394c60653852f6abd8bed493720e.js"></script>
+                                                <script src="../../../../../assets/vendor/lightbox.min-c88dcd8d658bb8192df1f50fb6d4ccba.js"></script>
+                                            </body>
+                                        </html>

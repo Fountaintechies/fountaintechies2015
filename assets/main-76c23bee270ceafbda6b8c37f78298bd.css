@@ -22,6 +22,10 @@ audio:not([controls]) {
 [hidden], template {
   display: none
 }
+/*div{
+  border: 1px solid black;
+}*/
+
 a {
   background-color: transparent
 }
@@ -5622,6 +5626,11 @@ button.close {
 .icon-af-logo:before {
   content: "\e600"
 }
+
+.icon-ft-logo:before {
+  content: "\e601";
+}
+
 @font-face {
   font-family: ClanWeb-Medium;
   src: url("../fonts/ClanWeb-Medium.eot")
@@ -8663,6 +8672,12 @@ a:hover {
 .post.post-type-ios .icon-wrapper i, .blog-post-header.post-type-ios .icon-wrapper i, .related-post.post-type-ios .icon-wrapper i, .teaser-post.post-type-ios .icon-wrapper i, .continue-reading.post-type-ios .icon-wrapper i, .recent-changes-teaser.post-type-ios .icon-wrapper i {
   color: #aa66cc
 }
+.post.post-type-beacon .icon-wrapper, .blog-post-header.post-type-beacon .icon-wrapper, .related-post.post-type-beacon .icon-wrapper, .teaser-post.post-type-beacon .icon-wrapper, .continue-reading.post-type-beacon .icon-wrapper, .recent-changes-teaser.post-type-beacon .icon-wrapper {
+  border-color: rgb(92,43,127);
+}
+.post.post-type-beacon .icon-wrapper i, .blog-post-header.post-type-beacon .icon-wrapper i, .related-post.post-type-beacon .icon-wrapper i, .teaser-post.post-type-beacon .icon-wrapper i, .continue-reading.post-type-beacon .icon-wrapper i, .recent-changes-teaser.post-type-beacon .icon-wrapper i {
+  color: rgb(92,43,127);
+}
 .post, .post a, .post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .related-post, .related-post a, .related-post h1, .related-post h2, .related-post h3, .related-post h4, .related-post h5, .related-post h6 {
   color: #404040
 }
@@ -8683,6 +8698,9 @@ a:hover {
 }
 .post.post-type-ios a, .post.post-type-ios h1, .post.post-type-ios h2, .post.post-type-ios h3, .post.post-type-ios h4, .related-post.post-type-ios a, .related-post.post-type-ios h1, .related-post.post-type-ios h2, .related-post.post-type-ios h3, .related-post.post-type-ios h4 {
   color: #2ecc71
+}
+.post.post-type-beacon a, .post.post-type-beacon h1, .post.post-type-beacon h2, .post.post-type-beacon h3, .post.post-type-beacon h4, .related-post.post-type-beacon a, .related-post.post-type-beacon h1, .related-post.post-type-beacon h2, .related-post.post-type-beacon h3, .related-post.post-type-beacon h4 {
+  color: rgb(92,43,127);
 }
 .post.post-type-android a, .post.post-type-android h1, .post.post-type-android h2, .post.post-type-android h3, .post.post-type-android h4, .related-post.post-type-android a, .related-post.post-type-android h1, .related-post.post-type-android h2, .related-post.post-type-android h3, .related-post.post-type-android h4 {
   color: #aa66cc
@@ -8977,7 +8995,7 @@ a.author-twitter {
   margin-bottom: 75px
 }
 .client-block .client-block-inner {
-  background-image: url("../images/clients/client-sprite-small.png");
+  background-image: url("../images/clients/client-sprite-color-small.png");
   background-size: 720px 480px;
   width: 240px;
   height: 240px;
@@ -9020,7 +9038,7 @@ a.author-twitter {
   background-position: -514px -300px
 }
 .client-block:hover .client-block-inner {
-  background-image: url("../images/clients/client-sprite-color-small.png")
+  background-image: url("../images/clients/client-sprite-small.png")
 }
 .cases-list-image {
   width: 100%;
@@ -9143,6 +9161,10 @@ a.author-twitter {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.6em;
   font-family: ClanWeb-Medium, "Open Sans", sans-serif
+}
+
+.copyright{
+  color:rgb(22,38,78);
 }
 .header-teaser {
   color: #fff
@@ -9658,7 +9680,7 @@ a.author-twitter {
     background-image: url("../images/typewriter-wallpaper-1024.jpg")
   }
   .client-block .client-block-inner {
-    background-image: url("../images/clients/client-sprite-medium.png");
+    background-image: url("../images/clients/client-sprite-color-medium.png");
     background-size: 720px 480px;
     width: 240px;
     height: 240px;
@@ -9700,7 +9722,7 @@ a.author-twitter {
   background-position: -514px -300px
 }
   .client-block:hover .client-block-inner {
-    background-image: url("../images/clients/client-sprite-color-medium.png")
+    background-image: url("../images/clients/client-sprite-medium.png")
   }
 }
 @media (min-width: 1200px) {
@@ -9739,7 +9761,7 @@ a.author-twitter {
   .client-block .client-block-inner {
     background-image: url("../images/clients/client-sprite.png");
     background-size: 720px 480px;
-    width: 240px;
+    width: 240px;client-sprite
     height: 240px;
 }
 .client-block.client-philips .client-block-inner {
