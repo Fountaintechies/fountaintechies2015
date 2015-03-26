@@ -213,8 +213,8 @@ td, th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("http://appfoundry.be/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("http://appfoundry.be/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("http://appfoundry.be/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("http://appfoundry.be/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("http://appfoundry.be/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
 }
 .glyphicon {
   position: relative;
@@ -9829,7 +9829,7 @@ li{
   font-weight: bold;
   padding: 3px 8px;
 }
-.head_p{  
+.head_p{
   background: rgb(25, 100, 127);
   color: #fff;
   padding: 10px;
