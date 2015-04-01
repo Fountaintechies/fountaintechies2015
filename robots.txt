@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /js/
+Disallow: /templates/
+Disallow: /blog/2014/
+Disallow: /colors.html
