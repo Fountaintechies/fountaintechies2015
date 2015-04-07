@@ -9874,3 +9874,53 @@ li{
   position: absolute;
   padding-top: 20px;
 }
+.aboutus_img{
+   max-width: 150px;
+  border-radius: 50%;
+  padding: 15px;
+  border: 4px solid #D9E2E8;
+  margin-bottom: 15px;
+}
+.margin-bottom_1 h3{
+  font-size: 20px;
+}
+.margin-bottom_1 p{
+  text-align: justify;  padding: 0 15px;
+}
+.about_services{
+  margin: 0 auto;
+  background: #f4f8fa;
+}  
+.about_services h3{
+    font-size: 20px;
+    color:rgb(25,100,127);
+}
+.about_services h2{
+    margin: 50px 0 30px;
+}
+.about_services p{
+    margin-bottom: 35px;
+}    
+.team_img{
+    border: 4px solid #19647F;
+}
+.contact_form{
+  background-color: #fff;
+  padding:50px;
+  border: none;
+    margin-bottom: 50px;
+}
+.contact_input{
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 25px 15px;
+}
+.send_btn{
+    background-color: rgb(74,197,222);
+  color: white;
+  border-width: 0 0 4px 0;
+  border-style: solid;
+  border-color: rgb(26,151,166);
+  padding: 15px 30px;
+  font-size: 18px;
+}
