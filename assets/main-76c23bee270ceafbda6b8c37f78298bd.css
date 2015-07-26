@@ -9179,8 +9179,8 @@ a.author-twitter {
   background-size: cover
 }
 .header-background-image .overlay {
-  background: rgba(52, 73, 94, 0.8) url("../images/square-pattern.png") repeat 0 0;
-  background-size: 4px 4px
+  /*background: rgba(52, 73, 94, 0.8) url("../images/square-pattern.png") repeat 0 0;
+  background-size: 4px 4px*/
 }
 .header-wrapper {
   padding-top: 75px
@@ -9355,7 +9355,7 @@ a.author-twitter {
     margin: 0 0 0 0
   }
   .page-hero {
-    height: 400px
+    height: 200px
   }
   .page-header {
     margin: 0 0 75px 0
@@ -9664,7 +9664,7 @@ a.author-twitter {
   .header-table.high-res {
     background-image: url("../images/header-vague-1024.jpg")
   }
-  .page-header.about-header {
+  .page-header.-headerabout {
     background-image: url("../images/about-1200.jpg")
   }
   .page-header.clients-header {
