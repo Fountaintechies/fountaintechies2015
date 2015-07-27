@@ -99,7 +99,7 @@
                   <div class="light">
                     <div class="page container">
                       <div class="row">
-                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-push-0 col-md-12">
+                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-push-0 col-md-12" style="padding-bottom: 20px;">
                           <article class="post-content">
                             <section class="row">
                               <div class="col-md-6 margin-bottom">
@@ -119,7 +119,47 @@ Our young, lively yet dexterous team at Fountain Technologies works with absolut
                                
                                 </div>
                                     <div class="col-md-5 col-md-push-1 margin-bottom">
-                                      <h2>Get In Touch</h2>
+                        <h2>Contact Us</h2> 
+                            <div class="row">
+                                <div class="col-md-12">
+                                   <div ng-controller="ExampleController">
+                                      <form novalidate class="simple-form">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="name">
+                                                        Name</label>
+                                                    <input type="text" class="form-control contact_input" placeholder="Enter name" ng-model="user.name" required="required" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">
+                                                        Email Address</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                        </span>
+                                                        <input type="email" class="form-control contact_input" ng-model="user.email" placeholder="Enter email" required="required" /></div>
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="name">
+                                                        Brief</label>
+                                                    <textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+                                                        placeholder="Brief"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                            <button type="submit" class="btn btn-primary  save_btn" ng-click="reset()" value="Reset">
+                                                    Reset</button>
+                                                <button type="submit" class="btn btn-primary pull-right save_btn" ng-click="update(user)" value="Save">
+                                                    Save</button>
+                                            </div>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+<!--                                     <h2>Get In Touch</h2>
                                       
 
                                       <div ng-controller="ExampleController">
@@ -131,7 +171,7 @@ Our young, lively yet dexterous team at Fountain Technologies works with absolut
                                               <input type="submit" ng-click="update(user)" value="Save" />
                                             </form>
                                             
-                                          </div>
+                                      </div> -->
 
                                       
                                     </div>
@@ -147,11 +187,13 @@ Our young, lively yet dexterous team at Fountain Technologies works with absolut
                                       <h5>Read More</h5>
                                   </div>
                                    <div class="col-md-3 align-center">
-                                      <h2>Nodejs</h2> 
+                                      <h2>Nodejs</h2>
+                                      <img srcset="../images/nodejs_1.jpg" alt="Angularjs" width="200" /> 
                                       <h5>Read More</h5>
                                   </div>
                                    <div class="col-md-3 align-center">
                                       <h2>PHP</h2> 
+                                      <img srcset="../images/php.png" alt="Angularjs" width="200" />
                                       <h5>Read More</h5>
                                   </div>
                                    <div class="col-md-3 align-center">

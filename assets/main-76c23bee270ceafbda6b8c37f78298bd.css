@@ -9916,11 +9916,21 @@ li{
   padding: 25px 15px;
 }
 .send_btn{
-    background-color: rgb(74,197,222);
+  background-color: rgb(74,197,222);
   color: white;
   border-width: 0 0 4px 0;
   border-style: solid;
   border-color: rgb(26,151,166);
   padding: 15px 30px;
   font-size: 18px;
+}
+.save_btn{
+    background-color: rgb(74,197,222);
+    color: white;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgb(26,151,166);
+    padding: 15px 30px;
+    font-size: 18px;
+    width: 49%;
 }
