@@ -5,4 +5,4 @@ RewriteRule ^(.*)$ http://www.fountaintechies.com/$1 [L,R=301,NC]
 
 #Redirect About Us
 
-Redirect /about/index.html http://www.fountaintechies.com/about/
+ RewriteRule /company/profile.html http://www.fountaintechies.com/about/
