@@ -3,4 +3,6 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^fountaintechies.com [NC]
 RewriteRule ^(.*)$ http://www.fountaintechies.com/$1 [L,R=301,NC]
 
-#testing
+#Redirect About Us
+
+Redirect /about/index.html http://www.fountaintechies.com/about/
