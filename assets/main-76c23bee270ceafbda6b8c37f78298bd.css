@@ -9938,3 +9938,18 @@ li{
   display: inline-block;
   cursor: pointer;
 }
+
+.about-header-nodejs{
+  height: 350px;
+  background-image: url("../images/nodejs_header_back.jpg");
+  margin-bottom: 0;
+}
+.about-header-nodejs .page-intro{
+  margin-top: 13%;
+}
+.about-header-nodejs .page-hero{
+  height: 350px;
+}
+.blog_contain{
+  padding: 50px;
+}

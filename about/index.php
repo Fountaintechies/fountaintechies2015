@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE html>
-<html>
+<html >
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,13 +55,13 @@
                               <a class="page-link Clients" href="../nodejs/index.html">Nodejs</a>
                           </li>
                           <li>
-                            <a class="page-link Clients" href="index.html">Angularjs</a>
+                            <a class="page-link Clients" href="../angularjs/index.html">Angularjs</a>
                           </li>
                           <li>
                             <a class="page-link Clients" href="../ibeacon/index.html">Ibeacon</a>
                           </li>                        
                           <li>
-                            <a class="page-link About Us" href="../about/index.php">About Us</a>
+                            <a class="page-link About Us" href="index.html">About Us</a>
                           </li>
                           <li>
                             <a class="page-link Blog" href="../blog/index.html">Blog</a>
@@ -86,8 +86,8 @@
                           <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
                             <div class="page-intro">
                               <hgroup>
-                                <h1 class="page-hero-title">Node.js API Development for YOUR app.</h1>
-                                <h2 class="page-hero-subtitle">How can we help you?</h2>
+                                <h1 class="page-hero-title">About Us</h1>
+                                <h2 class="page-hero-subtitle">Home in Singapore</h2>
                               </hgroup>
                             </div>
                           </div>
@@ -95,92 +95,82 @@
                       </div>
                     </div>
                   </header>
-                  <div class="light" style="margin-bottom: 50px;">
+                  <div class="light">
                     <div class="page container">
                       <div class="row">
-                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-push-0 col-md-12">
+                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-push-0 col-md-12" style="padding-bottom: 20px;">
                           <article class="post-content">
                             <section class="row">
-                                      <div class="col-md-4 margin-bottom_1" style="text-align:center;">
-                                        <img src="../images/api_logo.png" class="aboutus_img">
-                                        <h3>API development</h3>
-                                        <p>Serving millions of requests? Our experience with scalable APIs will help you build products what your users will love.</p>
-                                      </div>
-                                      <div class="col-md-4 margin-bottom_1" style="text-align:center;">
-                                        <img src="../images/nodejs.png" class="aboutus_img">
-                                        <h3>JavaScript and Node.js Consulting</h3>
-                                        <p>RisingStack provides help in the full lifecycle of JavaScript applications: design, development, code-reviews, deployment and maintenance.</p>
-                                      </div>
-                                      <div class="col-md-4 margin-bottom_1" style="text-align:center;">
-                                        <img src="../images/nodejs.png" class="aboutus_img">
-                                        <h3>Enterprise solutions</h3>
-                                        <p>Moving away from a monolithic system to microservices? We can help you build reliable and performant applications.</p>
-                                      </div>                                    
-                                  </section>
-                                  </article>
+                              <div class="col-md-6 margin-bottom">
+                                <h2>Fountaintechies</h2>
+                                <p>We build highly scalable business solutions in the web and app world that cater to the needs of fast growing companies on or offline.
+Due to a well balanced mix of talented programmers and designers, and by combining diverse expertise in innovation management and new product development, we create products that excite and inspire, are easy to navigate, and enable businesses to accelerate growth by tapping into new markets. Our recipe for success is a holistic solution.
+
+We are providing guidance through the entire process of the development, from ideation, to deployment, working closely with our clients to be able to relate to their specific needs and shaping the product this way.
+Our young, lively yet dexterous team at Fountain Technologies works with absolute commitment - ensuring satisfied customers.</p><br/>
+                              
+
+                                <h2>Our Technologies</h2>
+                                
+                                
+
+
+                               
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="push">
-                          </div>
-                        </div>
-                        <section class="about_services"> 
-                          <div class="container">
-                            <h2>Services</h2>
-                            <h3>Architectural Audits</h3>
-                            <p>The architecture of a system is one of the most crucial decisions to get right from the beginning. We help you choose hosting and deployment, provide recommendations related to developing a highly-available application, as well as evaluation of connected services, like databases and file storages: how to make them redundant and highly-available.</p>
+                    <?php
+include("../database/db.php");
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
 
-                            <h3>API Development</h3>
-                            <p>We love writing code and scaling large systems. We have experience with serving millions of users. So you can be confident that with our recommendations your APIs are going to be performant and reliable.</p>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   if (empty($_POST["name"])) {
+     $nameErr = "Name is required";
+   } else {
+     $name = test_input($_POST["name"]);
+     // check if name only contains letters and whitespace
+     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+       $nameErr = "Only letters and white space allowed"; 
+     }
+   }
+   
+   if (empty($_POST["email"])) {
+     $emailErr = "Email is required";
+   } else {
+     $email = test_input($_POST["email"]);
+     // check if e-mail address is well-formed
+     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+       $emailErr = "Invalid email format"; 
+     }
+   }
+   if (empty($_POST["comment"])) {
+     $comment = "";
+   } else {
+     $comment = test_input($_POST["comment"]);
+   }
+}
 
-                            <h3>Code Reviews</h3>
-                            <p>Learning proper patterns and avoiding pitfalls result in a cleaner, more reliable and more maintainable codebase. RisingStack can help you with a comprehensive, hands on review of your codebase to ensure production-ready quality.</p>
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
+?>
 
-                            <h3>Node.js Support</h3>
-                            <p>RisingStack offers support plans to ensure that your system remains robust and up-to-date. You get a dedicated senior engineer who will answer all your technical questions and will help you move your business forward.</p>
-
-                            <h3>Trainings</h3>
-                            <p>Learn Node.js and JavaScript with us: from API development to Isomorphic Javascript. We do online and onsite trainings as well to accelerate your company into the JavaScript world.</p>
-                          </div>  
-                        </section>
-                        <div class="container">  
-                        <h2 style="margin: 50px 0 30px;">The Team</h2>                    
-                        <div class="row" style="  padding: 20px 0;">
-                                <div class="col-lg-4">
-                                  <p style="text-align:center;">
-                                  <img class="img-circle team_img" src="../images/amol.jpg" width="140" height="140">
-                                  </p>
-                                  <p style="text-align:center;"><a href="mailto:amol.chawathe@fountaintechies.com"><strong>Amol Chawathe</strong></a><br>CEO - System Architecture<br></p><p>Amol’s passion for new technologies and their implementation has shaped the face of the company. As a system architect he is the mastermind, laying out the development from start to end leveraging the latest advances in the web and app development space to enhance user experience and reducing development time. Amol has previously applied his enthusiasm for design and development to a range of products for IBM, Ogilvy and SMU, where he held positions leading engineering efforts, coordinating projects, and developing business plans. With fifteen years of global experience in software development, embedded systems and operating systems he has started his own venture in Singapore.<br><br>Amol sees a seminal moment in Southeast Asia with unparalleled opportunities for those willing to take on the challenge.</p>
-                                  
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                  <p style="text-align:center;">
-                                  <img class="img-circle team_img" src="../images/karthika.jpg" width="140" height="140">
-                                  </p>
-                                  <p style="text-align:center;"><a href="mailto:karthika.baskar@fountaintechies.com"><strong>Karthika Baskar</strong></a><br>Project Management<br></p><p>Karthika’s focus is on creating cost-effective, innovative and efficient solutions, while keeping an eye on the time plan. She has an innate talent for leveraging technology to eliminate inefficiencies and optimize use of available information to solve challenging problems - excelling at project management. Her Masters in Management of Technology from the National University of Singapore is yet another way to constitute her qualifications. Karthika previously held a position as a systems engineer at Infosys, consulting financial institutes with internet banking solutions and developing the same.</p>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-lg-4">
-                                  <p style="text-align:center;">
-                                  <img class="img-circle team_img" src="../images/karl.jpg" width="140" height="140">
-                                  </p>
-                                  <p style="text-align:center;"><a href="mailto:karl.kurzer@fountaintechies.com"><strong>Karl Kurzer</strong></a><br>Innovation and Client Management<br></p><p>Karl’s strength in critical thinking and business model innovation continuously challenges given processes and models, creating superior and innovative solutions, both in house as well as for clients. His ability to question his own ideas and changing viewpoints can be seen as a result of his vast international experience. Karl has studied management and technology at prestigious universities in Germany, Sweden, the USA as well as Singapore, equipping him with a unique skillset, ready to create value. Previously Karl has worked at companies such as BMW, Schaeffler, as well as Zinal Consulting.</p>
-                                </div>
-                              </div>
-                        </div> 
-                     <section class="about_services">                
-                        <div class="container">
-                        <h2 style="margin: 50px 0 30px;">Contact Us</h2> 
+                    <div class="col-md-5 col-md-push-1 margin-bottom">
+                        <h2>Contact Us</h2> 
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="well well-sm contact_form">
-                                        <form>
+                              <div class="col-md-12">
+                                <p><span class="error">* required field.</span></p>
+                                   <div ng-controller="ExampleController">
+                                      <form novalidate class="simple-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="name">
                                                         Name</label>
-                                                    <input type="text" class="form-control contact_input" id="name" placeholder="Enter name" required="required" />
+                                                    <input type="text" class="form-control contact_input" placeholder="Enter name" ng-model="user.name" required="required" value="<?php echo $name;?>" />
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="email">
@@ -188,40 +178,87 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                                         </span>
-                                                        <input type="email" class="form-control contact_input" id="email" placeholder="Enter email" required="required" /></div>
+                                                        <input type="email" class="form-control contact_input" ng-model="user.email" placeholder="Enter email" required="required" value="<?php echo $email;?>" /></div>
                                                 </div>
                                             </div> 
-                                            <div class="col-md-6">   
-                                                 <div class="form-group">
-                                                    <label for="subject">
-                                                        Company</label>
-                                                    <input type="text" class="form-control contact_input" id="name" placeholder="Enter Company name" required="required" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="subject">
-                                                        Subject</label>
-                                                    <input type="text" class="form-control contact_input" id="name" placeholder="Enter Subject" required="required" />
-                                                </div>
-                                            </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="name">
-                                                        Message</label>
-                                                    <textarea name="message" id="message" class="form-control contact_input" rows="11" cols="25" required="required"
-                                                        placeholder="Message"></textarea>
+                                                        Brief</label>
+                                                    <textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+                                                        placeholder="Brief"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
-                                                <button type="submit" class="btn btn-primary pull-right send_btn" id="btnContactUs">
-                                                    Send Message</button>
+                                            <button type="clear" class="btn btn-primary  save_btn" ng-click="reset()" value="Reset">
+                                                    Reset</button>
+                                            <button type="submit" class="btn btn-primary pull-right save_btn" ng-click="update(user)" value="Save">
+                                                    Save</button>
                                             </div>
                                         </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                       </section>     
+                            <?php
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+
+
+
+$sql = "INSERT INTO aboutus (name, email, brief)
+VALUES ('$name', '$email', '$comment')";
+// use exec() because no results are returned
+echo "Thank You!";
+mysql_query($sql) or die(mysql_error());
+
+?>
+                                      
+                          </div>
+                    </section>
+
+                             
+                            </article>
+                            <article>
+                                 <section class="our-technology">
+                                  <div class="col-md-3 align-center">
+                                      <h2>Angularjs</h2> 
+                                      <img srcset="../images/angularjs.png" alt="Angularjs" width="200" />
+                                      <a>Read More</a>
+                                  </div>
+                                   <div class="col-md-3 align-center">
+                                      <h2>Nodejs</h2>
+                                      <img srcset="../images/nodejs_1.jpg" alt="Angularjs" width="200" /> 
+                                      <a href="../about/nodejs.html">Read More</a>
+                                  </div>
+                                   <div class="col-md-3 align-center">
+                                      <h2>PHP</h2> 
+                                      <img srcset="../images/php.png" alt="Angularjs" width="200" />
+                                      <a>Read More</a>
+                                  </div>
+                                   <div class="col-md-3 align-center">
+                                      <h2>IOT</h2> 
+                                      <img srcset="../images/iot.jpg" alt="Angularjs" width="200" />
+                                      <a>Read More</a>
+                                  </div>
+                                  
+                                </section>  
+                            </article>
+                          </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="push">
+                          </div>
+                        </div>
+
                         <section id="contact" class="dark footer border-top contact xs-margin sm-margin md-margin" footer-element="">
                           <div class="container">
                             <div class="row">
@@ -268,6 +305,7 @@
                             </div>
                           </div>
                         </section>
+
                         <div class="align-center dark footer border-bottom">
                           <p class="copyright">
                             <small>&copy; 2015 Fountain Technologies Pte. Ltd.</small>

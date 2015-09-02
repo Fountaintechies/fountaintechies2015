@@ -40,7 +40,7 @@ var app = angular.module('xcellenApp', [ 'ui.router','ngSanitize'])
     })
     .state('aboutus', {
         url: '/about-us',
-        templateUrl: 'templates/aboutus.html',
+        templateUrl: 'templates/aboutus.php',
         controller: 'wwrController'
     })
     .state('wheretofindus', {

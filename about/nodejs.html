@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,16 +52,16 @@
                       <div class="navbar-collapse collapse" ng-class="{in: collapse.open}">
                         <ul class="nav navbar-nav navbar-right is-hidden" animated-navigation-navigation="">
                           <li>
-                              <a class="page-link Clients" href="../nodejs/index.html">Nodejs</a>
+                              <a class="page-link Clients" href="index.html">Nodejs</a>
                           </li>
                           <li>
                             <a class="page-link Clients" href="../angularjs/index.html">Angularjs</a>
                           </li>
                           <li>
                             <a class="page-link Clients" href="../ibeacon/index.html">Ibeacon</a>
-                          </li>                        
+                          </li>
                           <li>
-                            <a class="page-link About Us" href="index.html">About Us</a>
+                            <a class="page-link About Us" href="../about/index.php">About Us</a>
                           </li>
                           <li>
                             <a class="page-link Blog" href="../blog/index.html">Blog</a>
@@ -80,15 +79,16 @@
                       </div>
                     </div>
                   </div>
-                  <header class="page-header about-header">
+                  <header class="page-header about-header-nodejs">
                     <div class="page-hero">
                       <div class="container">
                         <div class="row">
                           <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
                             <div class="page-intro">
                               <hgroup>
-                                <h1 class="page-hero-title">About Us</h1>
-                                <h2 class="page-hero-subtitle">Home in Singapore</h2>
+                                <img src="../images/nodejs_blog.png" style="margin-bottom: 30px;">
+                                <h1 class="page-hero-title">NodeJS: The Browser and the Server Had Never Been This Close</h1>
+                                <h2 class="page-hero-subtitle"></h2>
                               </hgroup>
                             </div>
                           </div>
@@ -96,115 +96,72 @@
                       </div>
                     </div>
                   </header>
-                  <div class="light">
-                    <div class="page container">
-                      <div class="row">
-                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-push-0 col-md-12" style="padding-bottom: 20px;">
-                          <article class="post-content">
-                            <section class="row">
-                              <div class="col-md-6 margin-bottom">
-                                <h2>Fountaintechies</h2>
-                                <p>We build highly scalable business solutions in the web and app world that cater to the needs of fast growing companies on or offline.
-Due to a well balanced mix of talented programmers and designers, and by combining diverse expertise in innovation management and new product development, we create products that excite and inspire, are easy to navigate, and enable businesses to accelerate growth by tapping into new markets. Our recipe for success is a holistic solution.
+                  <section class="blog_contain">
+                    <div class="container">
+                      <p>
+                        <b>NodeJS</b> can be compared to one of those cool parents: It lets the young love thrive, doesn’t have an attitude when the lovers —the browser and the server in this case— want to have a movie date. In fact, it supports the relationship by providing an unwavering connection from the browser back to the server. And it uses minimal system resources while assuming this role. What this all means is that if coders use <b>NodeJS</b> to write an application, updates are sent to users straightaway in real time.
+                      </p>
+                    </div>
+                  </section>
+                  <section class="about_services" style="padding:50px;"> 
+                          <div class="container">
+                            <h3>Where There is Constant Communication, There is NodeJS</h3>
+                            <p>Then, when do we prefer to use this kind of a framework? The answer is anytime we know the system architecture requires a concurrent dialogue between the browser and the server. What comes to mind first when we talk about a concurrent dialogue is, of course, multi-user, real-time applications such as online games, chat rooms, collaboration tools, and the like.
+ 
+                            When one user does something on the application that other user needs to see immediately without refreshing the page —and we all know how annoying having to refresh the page frequently could be— it is best to knock on Node’s door.  Do we need to say that a framework with such characteristics compiles and executes data as fast as the Road Runner runs away from Coyote?
+ 
+                            Some might say, “But wait! Ruby, Django and Python could do this too… So why should I use NodeJS instead of one of these big boys?” We would tell them back, that NodeJS does the job without putting so many burdens on the server.
+                            </p>
 
-We are providing guidance through the entire process of the development, from ideation, to deployment, working closely with our clients to be able to relate to their specific needs and shaping the product this way.
-Our young, lively yet dexterous team at Fountain Technologies works with absolute commitment - ensuring satisfied customers.</p><br/>
-                              
+                            <h3>Open-Source Project Backed by a Real Company: NodeJS</h3>
+                            <p>We coders are aware that open source projects carry the risk of being abandoned by individual volunteers at one point in time by nature. Exceptions are possible if such open source projects are backed by real companies, and guess what? NodeJS is one of them! Presently, Joyent assumed the responsibility of sponsorship. There are other giants backing the project enthusiastically such as Wal-Mart, Microsoft, Yahoo, and PayPal.</p>
 
-                                <h2>Our Technologies</h2>
-                                
-                                
-
-
-                               
+                            <h3>Nodejs/expressjs Based Projects </h3>
+                            <div class="row" >
+                                <div class="col-md-4">
+                                  <div class="client-block-inner">
+                                     <img src="../images/clients/popety.png">
+                                  </div>
                                 </div>
-                                    <div class="col-md-5 col-md-push-1 margin-bottom">
-                        <h2>Contact Us</h2> 
-                            <div class="row">
-                                <div class="col-md-12">
-                                   <div ng-controller="ExampleController">
-                                      <form novalidate class="simple-form">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="name">
-                                                        Name</label>
-                                                    <input type="text" class="form-control contact_input" placeholder="Enter name" ng-model="user.name" required="required" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email">
-                                                        Email Address</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                        </span>
-                                                        <input type="email" class="form-control contact_input" ng-model="user.email" placeholder="Enter email" required="required" /></div>
-                                                </div>
-                                            </div> 
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="name">
-                                                        Brief</label>
-                                                    <textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
-                                                        placeholder="Brief"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                            <button type="submit" class="btn btn-primary  save_btn" ng-click="reset()" value="Reset">
-                                                    Reset</button>
-                                                <button type="submit" class="btn btn-primary pull-right save_btn" ng-click="update(user)" value="Save">
-                                                    Save</button>
-                                            </div>
-                                        </div>
-                                        </form>
-                                    </div>
+                                <div class="col-md-4">
+                                  <div class="client-block-inner">
+                                     <img src="../images/clients/bostadsrattappen.png">
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="client-block-inner">
+                                    <img src="../images/clients/gigster.png">
+                                  </div>
                                 </div>
                             </div>
-<!--                                     <h2>Get In Touch</h2>
-                                      
-
-                                      <div ng-controller="ExampleController">
-                                            <form novalidate class="simple-form">
-                                              Name: <input type="text" ng-model="user.name" /><br />
-                                              E-mail: <input type="email" ng-model="user.email" /><br />
-                                              Brief: <textarea type="textarea" ng-model="user.brief" /></textarea><br />
-                                              <input type="button" ng-click="reset()" value="Reset" />
-                                              <input type="submit" ng-click="update(user)" value="Save" />
-                                            </form>
-                                            
-                                      </div> -->
-
-                                      
-                                    </div>
-                              </section>
-
-                             
-                            </article>
-                            <article>
-                                 <section class="our-technology">
-                                  <div class="col-md-3 align-center">
-                                      <h2>Angularjs</h2> 
-                                      <img srcset="../images/angularjs.png" alt="Angularjs" width="200" />
-                                      <a>Read More</a>
-                                  </div>
-                                   <div class="col-md-3 align-center">
-                                      <h2>Nodejs</h2>
-                                      <img srcset="../images/nodejs_1.jpg" alt="Angularjs" width="200" /> 
-                                      <a>Read More</a>
-                                  </div>
-                                   <div class="col-md-3 align-center">
-                                      <h2>PHP</h2> 
-                                      <img srcset="../images/php.png" alt="Angularjs" width="200" />
-                                      <a>Read More</a>
-                                  </div>
-                                   <div class="col-md-3 align-center">
-                                      <h2>IOT</h2> 
-                                      <img srcset="../images/iot.jpg" alt="Angularjs" width="200" />
-                                      <a>Read More</a>
-                                  </div>
-                                  
-                                </section>  
-                            </article>
-                          </div>
+                          </div>  
+                  </section> 
+                    
+                  <div class="light" style="margin: 50px 0;">
+                    <div class="page container">
+                      <div class="row">
+                        <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-push-0 col-md-12">
+                          <h3>Application of nodejs </h3>
+                          <article class="post-content" style="margin-top:50px;">
+                            <section class="row">
+                                      <div class="col-md-4 margin-bottom_1" style="text-align:center;">
+                                        <img src="../images/api_logo.png" class="aboutus_img">
+                                        <h3>API development</h3>
+                                        <p>Serving millions of requests? Our experience with scalable APIs will help you build products what your users will love.</p>
+                                      </div>
+                                      <div class="col-md-4 margin-bottom_1" style="text-align:center;">
+                                        <img src="../images/nodejs.png" class="aboutus_img">
+                                        <h3>JavaScript and Node.js Consulting</h3>
+                                        <p>RisingStack provides help in the full lifecycle of JavaScript applications: design, development, code-reviews, deployment and maintenance.</p>
+                                      </div>
+                                      <div class="col-md-4 margin-bottom_1" style="text-align:center;">
+                                        <img src="../images/nodejs.png" class="aboutus_img">
+                                        <h3>Enterprise solutions</h3>
+                                        <p>Moving away from a monolithic system to microservices? We can help you build reliable and performant applications.</p>
+                                      </div>                                    
+                                  </section>
+                                  </article>
+                                </div>
                               </div>
                             </div>
                           </div>
