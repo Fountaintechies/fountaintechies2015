@@ -64,7 +64,7 @@
                             <a class="page-link About Us" href="index.html">About Us</a>
                           </li>
                           <li>
-                            <a class="page-link Blog" href="../blog/index.html">Blog</a>
+                           <!--  <a class="page-link Blog" href="../blog/index.html">Blog</a> -->
                           </li>
                           <li>
                             <a class="page-link Clients" href="../clients/index.html">Clients</a>
