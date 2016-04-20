@@ -52,13 +52,13 @@
                       <div class="navbar-collapse collapse" ng-class="{in: collapse.open}">
                         <ul class="nav navbar-nav navbar-right is-hidden" animated-navigation-navigation="">
                           <li>
-                              <a class="page-link Clients" href="../nodejs/index.html">Nodejs</a>
+                              <a class="page-link Clients" href="./nodejs/index.html">Nodejs</a>
                           </li>
                           <li>
-                            <a class="page-link Clients" href="../angularjs/index.html">Angularjs</a>
+                            <a class="page-link Clients" href="./angularjs/index.html">Angularjs</a>
                           </li>
                           <li>
-                            <a class="page-link Clients" href="../ibeacon/index.html">Ibeacon</a>
+                            <a class="page-link Clients" href="./ibeacon/index.html">Ibeacon</a>
                           </li>                        
                           <li>
                             <a class="page-link About Us" href="index.html">About Us</a>
@@ -67,13 +67,13 @@
                            <!--  <a class="page-link Blog" href="../blog/index.html">Blog</a> -->
                           </li>
                           <li>
-                            <a class="page-link Clients" href="../clients/index.html">Clients</a>
+                            <a class="page-link Clients" href="clients/index.html">Clients</a>
                           </li>
                           <li>
-                            <a class="page-link Contact" href="../contact/index.html">Contact</a>
+                            <a class="page-link Contact" href="contact/index.html">Contact</a>
                           </li>
                           <li>
-                            <a class="page-link Jobs" href="../jobs/index.html">Jobs</a>
+                            <a class="page-link Jobs" href="jobs/index.html">Jobs</a>
                           </li>
                         </ul>
                       </div>
@@ -230,22 +230,22 @@ mysql_query($sql) or die(mysql_error());
                                  <section class="our-technology">
                                   <div class="col-md-3 align-center">
                                       <h2>Angularjs</h2> 
-                                      <img srcset="../images/angularjs.png" alt="Angularjs" width="200" />
+                                      <img srcset="./images/angularjs.png" alt="Angularjs" width="200" />
                                       <a>Read More</a>
                                   </div>
                                    <div class="col-md-3 align-center">
                                       <h2>Nodejs</h2>
-                                      <img srcset="../images/nodejs_1.jpg" alt="Angularjs" width="200" /> 
-                                      <a href="../about/nodejs.html">Read More</a>
+                                      <img srcset="./images/nodejs_1.jpg" alt="Angularjs" width="200" /> 
+                                      <a href="./about/nodejs.html">Read More</a>
                                   </div>
                                    <div class="col-md-3 align-center">
                                       <h2>PHP</h2> 
-                                      <img srcset="../images/php.png" alt="Angularjs" width="200" />
+                                      <img srcset="./images/php.png" alt="Angularjs" width="200" />
                                       <a>Read More</a>
                                   </div>
                                    <div class="col-md-3 align-center">
                                       <h2>IOT</h2> 
-                                      <img srcset="../images/iot.jpg" alt="Angularjs" width="200" />
+                                      <img srcset="./images/iot.jpg" alt="Angularjs" width="200" />
                                       <a>Read More</a>
                                   </div>
                                   
