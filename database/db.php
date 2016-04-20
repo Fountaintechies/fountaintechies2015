@@ -8,7 +8,7 @@ if ("localhost" == $_SERVER[ 'SERVER_NAME'] || $_SERVER[ 'SERVER_NAME'] == "127.
  }
 else
  {
-  $con = mysql_connect('localhost','apps', '7gXWOqeaf');
+  $con = mysql_connect('apps.fountaintechies.com','apps', '7gXWOqeaf');
   $web_url ="http://fountaintechies.com";
  } 
  $db  = mysql_select_db('fountaintechies');
