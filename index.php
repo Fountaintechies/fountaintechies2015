@@ -86,8 +86,8 @@
                           <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
                             <div class="page-intro">
                               <hgroup>
-                                <h1 class="page-hero-title">Home Page</h1>
-                                <h2 class="page-hero-subtitle">Home in Singapore</h2>
+                                <h1 class="page-hero-title">Fountaintechies</h1>
+                                <!-- <h2 class="page-hero-subtitle">Home in Singapore</h2> -->
                               </hgroup>
                             </div>
                           </div>
