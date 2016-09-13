@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $('#enquirybutton').click(function(e) {
-    alert("hi");
+
     var data = {
       name: $("#name").val(),
       email: $("#email").val(),
@@ -10,7 +10,7 @@ $(document).ready(function() {
     };
 
     console.log(data);
-    alert(data);
+
     $.post("http://www.80startups.com/api/addenquiry", data, function(response, status) {
       console.log(response, status);
 
