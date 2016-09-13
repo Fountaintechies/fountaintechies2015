@@ -5,13 +5,15 @@ $(document).ready(function() {
     var data = {
       name: $("#name").val(),
       email: $("#email").val(),
-      contact_number: $("#contact_number").val()
+      contact_number: $("#contact_number").val(),
+      message: $("#message").val()
     };
 
     console.log(data);
     alert(data);
     $.post("http://www.80startups.com/api/addenquiry", data, function(response, status) {
       console.log(response, status);
+
     });
   });
 
